@@ -14,15 +14,15 @@ and both skills use [explain-in-simple-language](https://github.com/eai-org/agen
 from [agent-toolkit](https://github.com/eai-org/agent-toolkit) when they are installed; both work
 without them.
 
-## How to install the skills
+## Usage
 
-Install all skills in one command:
-
-```sh
+```bash
 git clone https://github.com/PythonCatania/ai-py-skills.git && cd ai-py-skills && ./install.sh
 ```
 
-The script symlinks every skill in two layers: `~/.agents/skills`, the agent-neutral location,
+## Install and update
+
+`install.sh` symlinks every skill in two layers: `~/.agents/skills`, the agent-neutral location,
 gets one link per skill pointing into the repo; your agent's own skills dir, `~/.claude/skills` by
 default, gets links pointing at those entries. Re-running is safe: correct links are left alone,
 stale ones re-pointed, broken ones pruned.
